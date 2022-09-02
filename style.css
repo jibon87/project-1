@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;900&display=swap');
+
+.hide {
+    display: none !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-black-900: #000000;
+    --bg-yellow-900: #f8e530;
+    --text-white-900: #ffffff;
+    --text-yellow-900: #f8e530;
+    --text-black-100: #bebcbc;
+    --text-black-900: #000000;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.padd-15 {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.btn {
+    margin-top: 10px;
+    text-align: center !important;
+    padding: 10px 45px;
+    text-decoration: none;
+    color: var(--text-white-900);
+    background: var(--bg-black-900);
+    transform: skewX(20deg);
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all 0.3s ease;
+    display: block;
+    margin: auto;
+    border-radius: 0;
+}
+
+.btn:hover {
+    transform: scaleX(1.1);
+    color: var(--text-white-900);
+    background: var(--bg-black-900);
+}
+
+.btn:focus{
+    color: var(--text-white-900);
+    background: var(--bg-black-900);
+}
+
+.section-title {
+    text-align: center;
+    padding: 50px 150px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-white-900);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--text-white-900);
+}
+
+p {
+    color: var(--text-black-100);
+}
+
+/* To Top Circle Button Start */
+
+.progress-wrap {
+    /* to top button sizeing area */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap.active-progress {
+    /* to top button hidden area */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .progress-wrap::after {
+    /* icon area */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    content: '\f102';
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: #da2c4d;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    z-index: 99;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .progress-wrap svg path {
+    /* circle background color area*/
+    /* fill: none; */
+  }
+  
+  .progress-wrap svg.progress-circle path {
+    /* circle border color area*/
+    stroke: #f45;
+    stroke-width: 5;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  /* To Top Circle Button End */
+
+/* Header Content Start */
+
+/* Navbar Area Start */
+
+.navbar {
+    padding: 25px 0px;
+}
+
+a span {
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    line-height: 0.6;
+    text-align: center;
+}
+
+.big-font {
+    font-size: 39px;
+}
+
+.small-font {
+    font-size: 23px;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--text-white-900);
+}
+
+.navbar-brand:hover {
+    color: var(--text-white-900);
+}
+
+.navbar-brand:focus {
+    color: var(--text-white-900);
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-yellow-900);
+}
+
+/* Navbar Area End */
+
+/* Header Content End */
+
+/* Home Slider Section Start */
+
+.home-page-slider {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(img/home-bg.jpg);
+}
+
+.home-page-slider .bg {
+    background-image: url(img/home-map.png);
+}
+
+.home-page-slider .home-info h2 {
+    font-size: 131px;
+    line-height: .8;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.home-page-slider .home-info p {
+    text-transform: uppercase;
+    font-size: 19px;
+    color: var(--text-black-900);
+}
+
+.home-page-slider span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--bg-black-900);
+}
+
+.home-page-slider span.swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: -15%;
+}
+
+
+/* Home Slider Section End */
+
+/* Page Area Section Start */
+
+.page-area {
+    text-align: center;
+}
+
+.page-area .section-title {
+    margin-top: 10px;
+}
+
+.page-area .section-title h2 {
+    color: var(--text-white-900);
+}
+
+.page-bg {
+    height: 50% !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paddind{
+    padding-bottom: 100px;
+}
+
+.page-content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: var(--text-white-900);
+}
+
+.page-area p {
+    padding: 0 100px;
+    margin-top: 20px !important;
+}
+
+.page-area button.btn.m {
+    background-color: #f8e530;
+    width: 230px;
+}
+
+/* Page Area Section End */
+
+/* Portfolio Section Start */
+.portfolio-area{
+    position: relative;
+    background-color: #f7e52fcc;
+}
+
+.portfolio-area .section-title{
+    padding-bottom: 0px;
+}
+
+.portfolio-area .section-title p{
+    color: var(--text-black-900);
+}
+
+.portfolio-area .img-box {
+    overflow: hidden;
+}
+
+.portfolio-area .img-box img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.portfolio-area .img-box img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-area .grid-item {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-area .btn {
+    margin-bottom:100px;
+}
+
+.bg-overly {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    content: "";
+    background-image: url(img/overyla.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-overly::after{
+    position: absolute;
+    background-color: #f7e52f;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+.p_l{
+    position: relative;
+    z-index: 99;
+}
+
+/* Portfolio Section End */
+
+/* LOGO AREA START */
+
+.logo-area .logo-carousel-area {
+    padding: 50px 0;
+}
+
+.logo-area .single-logo-wrap {
+    height: 120px;
+    width: 100%;
+}
+
+.logo-area .single-logo-item {
+    vertical-align: middle;
+}
+
+.logo-area .single-logo-wrap img,
+.owl-carousel .owl-item .single-logo-wrap img {
+    max-height: 120px;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* LOGO AREA END */
+
+/* Blog Area Start */
+
+.blog-area {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blog-area .section-title{
+    color: var(--text-white-900);
+}
+
+.blog-area .section-title p{
+    margin-top: 50px;
+    color: var(--text-white-900);
+}
+
+.blog-area .single-blog-item {
+    background: var(--bg-black-900);
+    padding: 25px;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+}
+
+.blog-area i.fa-sharp.fa-solid.fa-quote-right {
+    font-size: 50px;
+    color: var(--text-yellow-900);
+}
+
+.blog-area i.fa-solid.fa-star {
+    color: var(--text-yellow-900);
+}
+
+.blog-area i.fa-solid.fa-star:last-child {
+    color: var(--text-white-900);
+}
+
+.blog-area h5,
+.blog-area h6 {
+    color: var(--text-white-900);
+}
+
+.blog-area h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.blog-area .btn {
+    width: 230px;
+    background: var(--bg-yellow-900);
+    color: var(--text-black-900);
+}
+
+/* Blog Area End */
+
+/* Contact Area Start */
+
+.contact-area {
+    background: var(--bg-yellow-900);
+    padding-bottom: 50px;
+}
+
+.contact-area .my-doc {
+    border-bottom: 2px dotted;
+    margin-bottom: 15px;
+}
+
+.contact-area .my-doc h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.contact-area .my-doc p{
+    color: var(--text-black-900);
+}
+
+.contact-area .my-doc:last-child {
+    border-bottom: none;
+}
+
+.contact-area input.form-control,.contact-area textarea.form-control {
+    margin-bottom: 10px;
+    background: var(--bg-black-900);
+    color: var(--text-white-900);
+    text-transform: capitalize;
+}
+
+.contact-area .form-control:focus {
+    background-color: var(--bg-black-900);
+    border-color: var(--text-black-900);
+    outline: none;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / 50%);
+}
+
+.contact-area input.form-control {
+    border-radius: 50px;
+}
+
+.contact-area textarea.form-control {
+    border-radius: 15px;
+    height: 150px;
+}
+
+.contact-area .btn{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Contact Area End */
+
+/* Portfolio Section End */
+
+.footer-area {
+    background: var(--bg-black-900);
+}
+
+.footer-area span {
+    margin-left: 5px;
+}
+
+.footer-area .about-text {
+    padding: 0;
+    padding-right: 128px;
+}
+
+.footer-area .about-text p {
+    padding-bottom: 20px;
+}
+
+.footer-area .widget-title {
+    color: var(--text-white-900);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.footer-area .footer-menu li {
+    line-height: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-area .padding-top-bottom {
+    padding: 50px 0;
+}
+
+.footer-area h3 span {
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    line-height: 0.6;
+}
+
+.footer-area ul {
+    padding-left: 0;
+}
+
+.footer-area i.fab {
+    color: yellow;
+}
+
+.footer-area .copyright-text {
+    background-color: #f8e530;
+    padding: 30px 0;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+

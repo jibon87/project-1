@@ -1,0 +1,95 @@
+
+@media only screen and (max-width: 1440px) {
+
+    .home-page-slider .home-info h2 {
+        font-size: 100px;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+
+    .home-page-slider .home-info h2 {
+        font-size: 75px;
+    }
+    .home-img {
+        width: 70%;
+        margin-left: 30px;
+    }
+    .home-img img{
+        width: 100%;
+    }
+    .home-page-slider .home-info p {
+        font-size: 15px;
+    }
+    .page-area p {
+        padding: 0 0px;
+        font-size: 16px;
+    }
+    .page-img {
+        width: 70%;
+        margin: auto;
+    }
+    .page-img img {
+        width: 100%;
+    }
+    .blog-area h5 {
+        font-size: 20px;
+    }
+    .blog-area h6 {
+        font-size: 13px;
+    }
+    .footer-area .about-text {
+        padding-right: 10px;
+    }
+    .padd-15 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 992px) {
+
+    .home-img {
+        width: 75%;
+    }
+    .home-page-slider .home-info h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .home-page-slider .home-info p {
+        font-size: 12px;
+    }
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+
+    .home-page-slider .home-info h2 {
+        font-size: 48px;
+        line-height: 51px;
+    }
+    .home-page-slider .home-info p {
+        font-size: 9px;
+    }
+    .btn {
+        padding: 10px 27px;
+        font-size: 14px;
+    }
+    .section-title {
+        padding: 50px 20px;
+    }
+    .page-img {
+        width: 50%;
+    }
+    .page-area p {
+        padding: 0 10px;
+    }
+    .footer-area .copyright-text {
+        font-size: 12px;
+    }
+    .page-area button.btn.m {
+        width: 170px;
+    }
+
+}
